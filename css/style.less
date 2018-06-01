@@ -1,0 +1,325 @@
+/*
+
+File Name: style.less 
+Date: 03/11/18
+Programmer: Paige Dahl
+
+*/
+
+@import 'palette.less';
+
+/* ---------- MOBILE ---------- */
+
+@media only screen and (min-width: 300px) {
+	/* ---------- Global ---------- */
+	body {
+		background-color: @color5;
+		font-family: 'Antic', sans-serif;
+		font-size: 1em;
+	}
+	img {
+		max-width: 100%;
+		min-width: 300px;
+	}
+	/* ----- Header ----- */
+	header {
+		padding-top: 15px;
+		font-family: 'Carrois Gothic SC', sans-serif;
+		font-size: 1.1em;
+		h1 {
+			text-align: center;
+			color: @color1;
+			font-weight: bold;
+			border-top: 4px double @color1;
+			padding-top: 10px;
+		}
+		h3 {
+			text-align: center;
+			color: @color1;
+			font-weight: bold;
+		}
+		p {
+			text-align: center;
+			font-weight: bold;
+			border-bottom: 4px double @color1;
+			margin-bottom: 5px;
+			padding-bottom: 10px;
+		}
+		a {
+			color: @color1;
+			text-decoration: underline;
+			&:hover {
+				background-color: @color2;
+				color: white;
+				padding: 7px;
+				border-radius: 8px;
+			}
+		}
+		.navbar {
+			background-color: @color1;
+			.navbar-toggler {
+				color: transparent;
+				background-color: @color2;
+				border: none;
+			}
+			.nav-item {
+				a {
+					text-decoration: none;
+					&:hover {
+						background-color: @color2;
+					}
+				}
+			}
+			.dropdown-menu {
+				background-color: @color2;
+				.dropdown-item {
+					text-align: center;
+				}
+				a {
+					&:hover {
+						background-color: @color4;
+						color: @color1;
+					}
+				}
+			}
+			ul {
+				li {
+					text-align: center;
+					a {
+						color: white;
+					}
+				}
+			}
+		}
+	}
+	/* ----- Section ----- */
+	section {
+		padding-top: 20px;
+		h3 {
+			font-family: 'Carrois Gothic SC', sans-serif;
+		}
+		h4 {
+			margin-left: auto;
+			margin-right: auto;
+			font-family: 'Carrois Gothic SC', sans-serif;
+			font-size: 1.7em;
+		}
+		.col-sm {
+			padding: 2px;
+			margin: 3px;
+			border-radius: 8px;
+		}
+		button {
+			margin-left: auto;
+			margin-right: auto; 
+			background-color: @color1;
+			color: white;
+			box-shadow: 3px 3px 8px black;
+			font-family: 'Carrois Gothic SC', sans-serif;
+			&:hover {
+				background-color: @color2;
+			}
+			a {
+				color: white;
+				&:hover {
+					color: white;
+					text-decoration: none;
+				}
+			}
+		}
+		ul {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.container-fluid {
+		border-bottom: 4px double @color1;
+		border-top: 4px double @color1;
+		margin-top: 20px;
+		padding-top: 0;
+		.para {
+			height: 400px;
+			background-image: url("../images/projects.png");
+			background-color: @color6;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			button {
+				height: 50px;
+				margin: auto;
+			}
+		}
+		.col-md {
+			button {
+				color: white;
+				text-align: center;
+				width: 100%;
+				padding-top: 0;
+				margin-bottom: 15px;
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+				box-shadow: none;
+				box-shadow: 3px 3px 8px black; 
+			}
+			img {
+				margin-top: 15px;
+				padding-bottom: 0;
+				padding-left: 0;
+				padding-right: 0;
+				box-shadow: 3px 3px 8px black; 
+			}
+			.modal {
+				.close {
+					width: 20%;
+					color: @color1;
+					box-shadow: none;
+					padding-top: 15px;
+					&:hover {
+						background-color: white;
+					}
+				}
+				.modal-footer {
+					.first {
+						background-color: @color1;
+						&:hover {
+							background-color: @color2;
+						}
+					}
+					.second {
+						background-color: @color2;
+						&:hover {
+							background-color: @color6;
+						}
+					}
+				}
+			}
+		}
+	}
+	.container {
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 25px;
+	}
+	form {
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		.form-control {
+			border-color: @color1;
+			&:focus {
+				border-color: @color1;
+				box-shadow: 0 0 0 0.2rem @color6;
+			}
+		}
+	}
+	div.submitted {
+		margin-bottom: -30px;
+		h4 {
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			padding-bottom: 30px;
+		}
+		p {
+			text-align: center;
+		}
+	}
+	/* ----- Footer ----- */
+	footer {
+		font-family: 'Carrois Gothic SC', sans-serif;
+		background-color: @color1;
+		color: white;
+		text-align: center;
+		margin-top: 20px;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		font-size: 1.1em;
+		a {
+			color: white;
+			text-decoration: underline;
+			padding: 6px;
+			border-radius: 8px;
+			&:hover {
+				background-color: @color2;
+				color: white;
+			}
+		}
+		.copyright {
+			font-size: small;
+			border-top: 4px double white;
+			font-style: italic;
+			p {
+				margin-left: auto;
+				margin-right: auto;
+				padding-top: 15px;
+			}
+		}
+	}
+	.row {
+		margin-left: 0;
+		margin-right: 0;
+		max-width: 100%;
+	}
+}
+
+
+/* ----- TABLET ----- */
+
+@media only screen and (min-width: 768px) {
+	.container-fluid {
+		img {
+			min-width: 300px;
+		}
+	}
+	form {
+		width: 80%;
+	}
+}
+
+
+/* ----- BIGGER TABLET ----- */
+
+@media only screen and (min-width: 936px) {
+	.container-fluid {
+		img {
+			min-width: 400px;
+			padding: 5px;
+		}
+	}
+	form {
+		width: 70%;
+	}
+}
+
+
+/* ----- DESKTOP ----- */
+
+@media only screen and (min-width: 1236px) {
+	.container-fluid {
+		img {
+			min-width: 500px;
+			padding: 10px;
+		}
+	}
+	form {
+		width: 70%;
+	}
+}
+
+
+/* ----- BIGGER DESKTOP ----- */
+
+@media only screen and (min-width: 1536px) {
+	.container-fluid {
+		img {
+			min-width: 200px;
+			padding: 15px;
+		}
+	}
+	form {
+		width: 70%;
+	}
+}
+
+;
